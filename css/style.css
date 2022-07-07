@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+.linearGradient4 {
+    background-image: linear-gradient(to bottom, #263f4b, #2e364d, #3e2b43, #49202d, #451c12);
+}
+
+.linearGradient3 {
+    background-image: linear-gradient(to left bottom, #d7aa83, #d5a199, #c29fa9, #aba0ab, #9e9e9f);
+}
+
+.linearGradient2 {
+    background-image: linear-gradient(to left bottom, #013f20, #003521, #022b20, #08221c, #0b1816);
+}
+
+.linearGradient1 {
+    background-image: linear-gradient(to left bottom, #e0bda2, #ba8f76, #95634e, #71392a, #4c0f0a);
+}
+
+.leftSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    transition: top 0s, transform 1s;
+}
+
+.leftSliderItem {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSliderTitle {
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.leftSliderText {
+    font-size: 25px;
+    text-align: center;
+}
+
+.rightSlider {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+    transition: top 0s, transform 1s;
+}
+
+.rightSliderItem {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.button {
+    position: absolute;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;   
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button:hover svg {
+    fill: black;
+    transition: 0.5s;
+}
+
+.btnDown {
+    top: 50%;
+    left: 40%;
+    transform: translatex(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+.btnUp {
+    top: 50%;
+    left: 40%;
+    transform: translatey(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
